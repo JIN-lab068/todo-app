@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo App</title>
+
+  <!-- フォント -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Todo App</h1>
+
+    <div class="input-area">
+      <input id="taskInput" placeholder="タスクを入力">
+      <button id="addBtn">追加</button>
+    </div>
+
+    <div class="filters">
+      <button data-filter="all">すべて</button>
+      <button data-filter="active">未完了</button>
+      <button data-filter="completed">完了</button>
+    </div>
+
+    <ul id="taskList"></ul>
+    <p id="taskCount" class="task-count"></p>
+  </div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
